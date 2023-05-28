@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfToDoList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToDoList>
+    <Name>d</Name>
+    <ImageSource>..\..\..\Assets\Icons\1.png</ImageSource>
+    <Tasks />
+    <SubLists />
+    <Type>Root</Type>
+  </ToDoList>
+  <ToDoList>
+    <Name>w</Name>
+    <ImageSource>..\..\..\Assets\Icons\1.png</ImageSource>
+    <Tasks />
+    <SubLists />
+    <Type>Root</Type>
+  </ToDoList>
+</ArrayOfToDoList>

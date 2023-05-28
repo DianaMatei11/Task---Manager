@@ -1,0 +1,63 @@
+﻿<Window x:Class="TaskManager.Views.ChangePathWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager.Views"
+        xmlns:models="clr-namespace:TaskManager.Models"
+        mc:Ignorable="d"
+        Title="ChangePathWindow" Height="550" Width="500">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Width" Value="155"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="7,7,7,7" Background="{TemplateBinding Background}">
+                            <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding  Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"  Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding  VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="FontSize" Value="35"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Miriam Fixed"/>
+        </Style>
+    </Window.Resources>
+    <Grid Background="PaleVioletRed">
+        <Label Content="Select the new parent for the selected to do list" FontSize="20" Margin="30,10,30,484"/>
+        <Button Content="Make it a root" Command="{Binding MakeRootCommand}" Style="{StaticResource ButtonStyle}" Margin="103,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="49" Width="270"/>
+        
+        <TreeView x:Name="toDoListsTreeView" ItemsSource="{Binding RootsList}" SelectedItemChanged="ToDoListsTreeView_SelectedItemChanged" Width="350" Margin="73,109,77,93">
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="{x:Type TreeViewItem}">
+                    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                </Style>
+            </TreeView.ItemContainerStyle>
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type models:ToDoList}" ItemsSource="{Binding SubLists}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding ImageSource}" Width="30" Height="30" Margin="3"/>
+                        <TextBlock Text="{Binding Name}" FontSize="24"/>
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.Resources>
+        </TreeView>
+        
+        <Button Content="CANCEL" Command="{Binding CancelCommand}" Style="{StaticResource ButtonStyle}" Margin="77,446,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="49" Width="123"/>
+        <Button Content="SAVE" Command="{Binding SaveCommand}" Style="{StaticResource ButtonStyle}" Margin="250,446,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="49" Width="123"/>
+        
+    </Grid>
+</Window>

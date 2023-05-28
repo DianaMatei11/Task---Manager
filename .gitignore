@@ -1,0 +1,63 @@
+# Visual Studio files
+.vs/
+obj/
+bin/
+
+# User-specific files
+*.user
+*.suo
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Resharper files
+_ReSharper.*/
+
+# Other
+*.cache
+*.log
+*.v2
+/Assets/Databases/first.txt
+obj/Debug/net6.0-windows/Views/MainWindow.g.i.cs
+*.baml
+*.2
+*.pdb
+*.dll
+*.v2
+*.vsidx
+*.2
+.vs/ProjectEvaluation/taskmanager.metadata.v5.2
+.vs/ProjectEvaluation/taskmanager.projects.v5.2
+.vs/TaskManager/FileContentIndex/548117c7-e031-49a4-a5fc-3ad7eb866a8f.vsidx
+.vs/TaskManager/v17/.futdcache.v2
+.vs/TaskManager/v17/.suo
+bin/Debug/net6.0-windows/TaskManager.dll
+bin/Debug/net6.0-windows/TaskManager.pdb
+obj/Debug/net6.0-windows/ref/TaskManager.dll
+obj/Debug/net6.0-windows/refint/TaskManager.dll
+obj/Debug/net6.0-windows/TaskManager.dll
+obj/Debug/net6.0-windows/TaskManager.g.resources
+obj/Debug/net6.0-windows/TaskManager.pdb
+obj/Debug/net6.0-windows/TaskManager_MarkupCompile.i.cache
+obj/Debug/net6.0-windows/Views/EditTaskWindow.baml
+obj/Debug/net6.0-windows/Views/EditTaskWindow.g.cs
+obj/Debug/net6.0-windows/Views/EditTaskWindow.g.i.cs
+obj/Debug/net6.0-windows/Views/EditTDLWindow.baml
+obj/Debug/net6.0-windows/Views/EditTDLWindow.g.cs
+obj/Debug/net6.0-windows/Views/EditTDLWindow.g.i.cs
+obj/Debug/net6.0-windows/Views/MainWindow.baml
+obj/Debug/net6.0-windows/Views/MainWindow.g.cs
+obj/Debug/net6.0-windows/Views/MainWindow.g.i.cs

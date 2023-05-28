@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfToDoList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToDoList>
+    <Name>Work List</Name>
+    <ImageSource>\Assets\Icons\5.png</ImageSource>
+    <Tasks>
+      <Task>
+        <Name>Vopsit oua</Name>
+        <Priority>Medium</Priority>
+        <Status>Created</Status>
+        <Category>School</Category>
+        <Deadline>2023-04-22T00:00:00</Deadline>
+        <DateFinish>0001-01-01T00:00:00</DateFinish>
+        <Description>cumpara vopsea pentru oua rosii</Description>
+        <IsDone>false</IsDone>
+        <IsSelected>false</IsSelected>
+      </Task>
+    </Tasks>
+    <SubLists>
+      <ToDoList>
+        <Name>Projects</Name>
+        <ImageSource>\Assets\Icons\5.png</ImageSource>
+        <Tasks>
+          <Task>
+            <Name>Finish project A</Name>
+            <Priority>High</Priority>
+            <Status>InProgress</Status>
+            <Category>Work</Category>
+            <Deadline>0001-01-01T00:00:00</Deadline>
+            <DateFinish>0001-01-01T00:00:00</DateFinish>
+            <Description>Finish project A by the end of the week</Description>
+            <IsDone>false</IsDone>
+            <IsSelected>false</IsSelected>
+          </Task>
+          <Task>
+            <Name>Start project B</Name>
+            <Priority>Medium</Priority>
+            <Status>Created</Status>
+            <Category>Work</Category>
+            <Deadline>0001-01-01T00:00:00</Deadline>
+            <DateFinish>0001-01-01T00:00:00</DateFinish>
+            <Description>Meet with team to discuss project B</Description>
+            <IsDone>false</IsDone>
+            <IsSelected>false</IsSelected>
+          </Task>
+        </Tasks>
+        <SubLists>
+          <ToDoList>
+            <Name>aa</Name>
+            <ImageSource>..\..\..\Assets\Icons\1.png</ImageSource>
+            <Tasks />
+            <SubLists />
+            <Type>SubTDL</Type>
+          </ToDoList>
+        </SubLists>
+        <Type>SubTDL</Type>
+      </ToDoList>
+      <ToDoList>
+        <Name>Meetings</Name>
+        <ImageSource>\Assets\Icons\7.png</ImageSource>
+        <Tasks>
+          <Task>
+            <Name>Meet with manager</Name>
+            <Priority>High</Priority>
+            <Status>Created</Status>
+            <Category>Work</Category>
+            <Deadline>0001-01-01T00:00:00</Deadline>
+            <DateFinish>0001-01-01T00:00:00</DateFinish>
+            <Description>Discuss project A progress with manager</Description>
+            <IsDone>false</IsDone>
+            <IsSelected>false</IsSelected>
+          </Task>
+          <Task>
+            <Name>Meet with team</Name>
+            <Priority>Medium</Priority>
+            <Status>Created</Status>
+            <Category>Work</Category>
+            <Deadline>0001-01-01T00:00:00</Deadline>
+            <DateFinish>0001-01-01T00:00:00</DateFinish>
+            <Description>Discuss project B details with team</Description>
+            <IsDone>false</IsDone>
+            <IsSelected>false</IsSelected>
+          </Task>
+        </Tasks>
+        <SubLists />
+        <Type>SubTDL</Type>
+      </ToDoList>
+    </SubLists>
+    <Type>Root</Type>
+  </ToDoList>
+  <ToDoList>
+    <Name>Grocery List</Name>
+    <ImageSource>\Assets\Icons\2.png</ImageSource>
+    <Tasks>
+      <Task>
+        <Name>Framanta cozonac</Name>
+        <Priority>High</Priority>
+        <Status>Created</Status>
+        <Category>Home</Category>
+        <Deadline>2023-04-16T00:00:00</Deadline>
+        <DateFinish>0001-01-01T00:00:00</DateFinish>
+        <IsDone>false</IsDone>
+        <IsSelected>false</IsSelected>
+      </Task>
+      <Task>
+        <Name>Vopsit oua</Name>
+        <Priority>Low</Priority>
+        <Status>Done</Status>
+        <Category>Home</Category>
+        <Deadline>2023-04-25T00:00:00</Deadline>
+        <DateFinish>2023-04-25T12:35:30.645481+03:00</DateFinish>
+        <Description>Cumpara oua si colorant rosu</Description>
+        <IsDone>false</IsDone>
+        <IsSelected>false</IsSelected>
+      </Task>
+    </Tasks>
+    <SubLists>
+      <ToDoList>
+        <Name>Produce</Name>
+        <ImageSource>\Assets\Icons\1.png</ImageSource>
+        <Tasks>
+          <Task>
+            <Name>Buy apples</Name>
+            <Priority>Medium</Priority>
+            <Status>Done</Status>
+            <Category>Home</Category>
+            <Deadline>2023-04-23T00:00:00</Deadline>
+            <DateFinish>2023-04-22T13:27:22.3456833+03:00</DateFinish>
+            <Description>Get at least 10 apples</Description>
+            <IsDone>false</IsDone>
+            <IsSelected>false</IsSelected>
+          </Task>
+          <Task>
+            <Name>Buy bananas</Name>
+            <Priority>Low</Priority>
+            <Status>Created</Status>
+            <Category>Home</Category>
+            <Deadline>0001-01-01T00:00:00</Deadline>
+            <DateFinish>0001-01-01T00:00:00</DateFinish>
+            <IsDone>false</IsDone>
+            <IsSelected>false</IsSelected>
+          </Task>
+        </Tasks>
+        <SubLists />
+        <Type>SubTDL</Type>
+      </ToDoList>
+      <ToDoList>
+        <Name>Meat</Name>
+        <ImageSource>\Assets\Icons\4.png</ImageSource>
+        <Tasks>
+          <Task>
+            <Name>Buy chicken</Name>
+            <Priority>Medium</Priority>
+            <Status>Done</Status>
+            <Category>Home</Category>
+            <Deadline>0001-01-01T00:00:00</Deadline>
+            <DateFinish>2023-04-22T13:27:44.8822387+03:00</DateFinish>
+            <IsDone>false</IsDone>
+            <IsSelected>false</IsSelected>
+          </Task>
+          <Task>
+            <Name>Buy beef</Name>
+            <Priority>High</Priority>
+            <Status>Done</Status>
+            <Category>Home</Category>
+            <Deadline>0001-01-01T00:00:00</Deadline>
+            <DateFinish>2023-04-22T13:27:48.7840966+03:00</DateFinish>
+            <IsDone>false</IsDone>
+            <IsSelected>false</IsSelected>
+          </Task>
+        </Tasks>
+        <SubLists />
+        <Type>SubTDL</Type>
+      </ToDoList>
+    </SubLists>
+    <Type>Root</Type>
+  </ToDoList>
+  <ToDoList>
+    <Name>aaa</Name>
+    <ImageSource>..\..\..\Assets\Icons\1.png</ImageSource>
+    <Tasks />
+    <SubLists />
+    <Type>Root</Type>
+  </ToDoList>
+</ArrayOfToDoList>

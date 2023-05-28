@@ -1,0 +1,5 @@
+school
+work
+home
+shopping list
+university
